@@ -7,22 +7,11 @@ import sys
 
 f=open('tweetList.txt','w',encoding='utf-8')
 
-#if a tweet contains characters outside the Basic Multilingual Plane,
-
-#like emojis IDLE can't handle them.  Convert.
-
-###########################################################################################
-def printTweet(x): #converts any unreadable characters to be readable
-
-    non_bmp_map = dict.fromkeys(range(0x10000, sys.maxunicode + 1), 0xfffd)
-
-    print(x.translate(non_bmp_map))
-
 #OAuth keysk, used for acccessing the api
-consumer_key= 'eeb6NbYROBoWY06ylxRxjVQWw'
-consumer_secret='Zfc0bW9dwnQWGkNwsyGvx6j2naVbLdsC5bh2hK23x5SxcmDoDY'
-access_token='1319068639186669568-7wtXRG1aIxfmSbTFUYSaJM9ahDa9f9'
-access_token_secret='pZHxobnCblf3DwpGgnoMUTbn5pBV8Qr64cqZvlRZx2xFy'
+consumer_key= '#KEY'
+consumer_secret='#KEY'
+access_token='#KEY'
+access_token_secret='#KEY'
 
 
 auth = tw.OAuthHandler(consumer_key, consumer_secret)
@@ -108,7 +97,7 @@ def barGraph():
 
 
 ##########################################################################################
-win=Tk()
+win=Tk() #This section impliments the Tkinter UI. Rudimentary but nice start.
 win.title("Twitter Data Graphing")
 win.geometry("800x700")
 graphs=Label(win, text='Select a Graph Type',font=70,anchor=CENTER)
