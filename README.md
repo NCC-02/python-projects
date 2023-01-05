@@ -1,2 +1,2 @@
-# python-projects
-Personal Python projects for myself and sometimes classes.
+Python Projects
+All of my projects based in Python
