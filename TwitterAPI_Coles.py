@@ -1,4 +1,4 @@
-#Nicolas Coles CS 118 Project Section 1
+#Nicolas Coles
 from tkinter import *
 import matplotlib.pyplot as plt
 import tweepy as tw #Module that handles twitter's api.
@@ -97,7 +97,7 @@ def barGraph():
 
 
 ##########################################################################################
-win=Tk() #This section impliments the Tkinter UI. Rudimentary but nice start.
+win=Tk() #This section impliments the Tkinter UI. Rudimentary but a start.
 win.title("Twitter Data Graphing")
 win.geometry("800x700")
 graphs=Label(win, text='Select a Graph Type',font=70,anchor=CENTER)
